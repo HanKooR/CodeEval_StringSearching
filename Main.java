@@ -60,7 +60,7 @@ public class Main {
                 String firstStr = row.split(",")[0];
                 String secondStr = row.split(",")[1];
                 /*
-                Search row for \*:
+                 Search row for \*:
                  Don't interprete as asterisk
                  */
                 if (secondStr.contains("\\*")) {
