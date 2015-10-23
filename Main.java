@@ -57,12 +57,11 @@ public class Main {
         try {
             in = new BufferedReader(new FileReader(fileName));
             while ((row = in.readLine()) != null) {
-                //System.out.print(row + "\t>>>");
                 String firstStr = row.split(",")[0];
                 String secondStr = row.split(",")[1];
                 /*
-                 Zeile nach \* - Zeichenfolge durchsuchen:
-                 Diese ist nicht als Asterisk zu verstehen!
+                Search row for \*:
+                 Don't interprete as asterisk
                  */
                 if (secondStr.contains("\\*")) {
                     firstStr = firstStr.replaceAll("\\*", "U");
